@@ -40,6 +40,14 @@ public class ARDetectImage : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            ListAllImages();
+        }
+    }
+
     private void OnEnable() => _imageManager.trackedImagesChanged += ImageFound;
 
     private void OnDisable() => _imageManager.trackedImagesChanged -= ImageFound;
@@ -112,4 +120,25 @@ public class ARDetectImage : MonoBehaviour
     {
         return _imageDictionary[trackedImage.referenceImage.name].isActivated;
     }
+
+    void ListAllImages()
+    {
+        Debug.Log(
+            $"There are {_imageManager.trackables.count} images being tracked.");
+
+        foreach (var trackedImage in _imageManager.trackables)
+        {
+            Debug.Log($"Image: {trackedImage.referenceImage.name} is at " +
+                      $"{trackedImage.transform.position}");
+
+            GetImageAt(trackedImage.trackableId);
+        }
+    }
+
+    void GetImageAt(TrackableId trackableId)
+    {
+        Debug.Log($"TrackableId: {_imageManager.trackables[trackableId]}");
+    }
+
+
 }

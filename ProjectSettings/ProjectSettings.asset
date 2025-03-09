@@ -162,7 +162,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.GiacoDev.Master_ARFoundation
-    Standalone: com.Unity-Technologies.com.unity.template.urp-blank
+    Standalone: com.GiacoDev.Master-ARFoundation
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
     Standalone: 0
@@ -914,7 +914,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 58ed3258-3e9a-442b-a2a9-e4b08c035c84
   framebufferDepthMemorylessMode: 0
