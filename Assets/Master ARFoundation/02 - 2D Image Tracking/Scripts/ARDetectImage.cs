@@ -38,6 +38,11 @@ public class ARDetectImage : MonoBehaviour
 
             _imageDictionary.Add(tempModel.name, tempInfo);
         }
+
+        foreach (var image in _imageDictionary)
+        {
+            Debug.Log($"{image.Key} - {image.Value}");
+        }
     }
 
     private void Update()
@@ -82,7 +87,9 @@ public class ARDetectImage : MonoBehaviour
 
     private void ChangeModelState(ARTrackedImage trackedImage, bool show)
     {
+        // bug: trackedImage.referenceImage.name llega null
         GameObject currentModel = _imageDictionary[trackedImage.referenceImage.name].model;
+        Debug.Log(currentModel);
         currentModel.transform.position = trackedImage.transform.position;
 
         if (show)
