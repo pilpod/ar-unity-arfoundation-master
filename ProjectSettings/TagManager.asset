@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Collision_Door
+  - Collision_Camera
+  - Stencil_Mask
+  - Stencil_Object
   - 
   - 
   - 
