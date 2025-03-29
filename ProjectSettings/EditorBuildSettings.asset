@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Master ARFoundation/04 - Plane Tracking/Plane Tracking.unity
     guid: 93edd7b082d0e95419210b76bc65918c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Master ARFoundation/05 - Raycast/RaycastScene.unity
     guid: d6259c019e769fb4ca09c869f31da57d
+  - enabled: 1
+    path: Assets/Master ARFoundation/06 - Point Cloud/Point_Cloud_Scene.unity
+    guid: ad0a15a9884ec014bb6a4e437ca0b8f1
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 30c389488df49a04fb88ebbddaf3c354,
       type: 2}
