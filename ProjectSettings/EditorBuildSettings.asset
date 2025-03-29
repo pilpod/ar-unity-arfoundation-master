@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Master ARFoundation/03 - Face Tracking/Face Tracking.unity
     guid: 95b1929c3018f93469daf18dcb4164fe
-  - enabled: 1
+  - enabled: 0
     path: Assets/Master ARFoundation/04 - Plane Tracking/Plane Tracking.unity
     guid: 93edd7b082d0e95419210b76bc65918c
+  - enabled: 1
+    path: Assets/Master ARFoundation/05 - Raycast/RaycastScene.unity
+    guid: d6259c019e769fb4ca09c869f31da57d
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 30c389488df49a04fb88ebbddaf3c354,
       type: 2}
